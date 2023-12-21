@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/blogger.svg" type="image/x-icon">
+</head>
+
+<body class="m-2 md:m-10">
+    <header>
+        <h1 class="text-center text-4xl font-bold">Document Object Model <span class="text-amber-500">(DOM)</span></h1>
+    </header>
+    <main class="p-2 md:p-10">
+        <div class="bg-sky-200 p-5 rounded-md my-2">
+            <h1 class="text-2xl font-semibold my-2">Q1: What is DOM and what is the purpose of DOM?</h1>
+            <p class="text-xl">DOM means Document Object Model which is a programming interface used for changing document structure, style and content dinamically. DOM represents the document as nodes and objects. To create dynamic and interactive web pages,developer use DOM.</p>
+            <p class="text-xl mb-2">Some purpose of DOM is given bellow</p>
+            <ul class="text-xl list-decimal mx-5">
+                <li>React to HTML events</li>
+                <li>Add HTML elements​</li>
+                <li>Remove HTML elements</li>
+                <li>Change HTML elements​</li>
+                <li>Add attributes​</li>
+                <li>Remove HTML attributes​</li>
+                <li>Change HTML attributes​</li>
+                <li>Change CSS stye properties</li>
+            </ul>
+        </div>
+        <div class="bg-violet-200 p-5 rounded-md my-2">
+            <h1 class="text-2xl font-semibold">Q2: How will you select HTML elements using DOM? Name the DOM methods.</h1>
+            <p class="text-xl my-2">We can select elements using dom in five methods.</p>
+            <p class="text-xl my-2">The methods are given bellow-</p>
+            <ul class="text-xl list-decimal mx-5">
+                <li>getElementById(): Select element which has the specified id</li>
+                <li>getElementsByClassName(): Select elements which has same class name</li>
+                <li>querySelector(): Select the first element in which condition matched</li>
+                <li>querySelectorAll(): Select all elements which match with condition</li>
+                <li>getElementsByTagName(): Select elements which has specified class name</li>
+            </ul>
+        </div>
+        <div class="bg-pink-200 p-5 rounded-md my-2">
+            <h1 class="text-2xl font-semibold mb-2">Q3: What is event bubble?</h1>
+            <p class="text-xl mb-2">Event bubble is the process of DOM manipulation by which an event in the DOM is first captured by the deepest child element which is the target of the event. After that the bubbles up through its parent elements until it reaches the topest element.</p>
+            <p class="text-xl">There are two working procedure of the event bubble. They are capturing and bubbling. For capture phase, the event travels down the DOM tree from top parent object to the target element. During the bubbling phase, the event travels back up the tree from the target element to the parent object.</p>
+        </div>
+        <div class="bg-amber-200 p-5 rounded-md my-2">
+            <h1 class="text-2xl font-semibold mb-2">Q4: What is a callback function and why will you use it?</h1>
+            <p class="text-xl mb-2">Callback function is a type of function that is passed as an argument to another function, and is executed by that function when a certain event occurs or after another function has completed its execution.</p>
+            <p class="text-xl">The main reason for using callback functions is to allow for asynchronous or non-blocking behavior in JavaScript code. By passing a callback function as an argument, the calling function can continue executing other code while the callback function is being executed in the background.</p>
+        </div>
+    </main>
+    <!-- Java Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
